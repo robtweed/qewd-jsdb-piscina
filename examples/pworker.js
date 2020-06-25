@@ -1,4 +1,4 @@
-const jsdb = require('qewd-jsdb_piscina');
+const jsdb = require('qewd-jsdb-piscina');
 
 module.exports = ({ documentName }) => {
 
