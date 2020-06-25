@@ -1,0 +1,24 @@
+{
+  "name": "qewd-jsdb-piscina",
+  "version": "0.1.1",
+  "description": "Opens access to QEWD-JSdb from a Piscina Worker Thread",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robtweed/qewd-jsdb-piscina.git"
+  },
+  "author": "Rob Tweed, M/Gateway Developments Ltd",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "qewd-mg-dbx": "",
+    "ewd-document-store": "",
+    "mg-dbx": ""
+  },
+  "bugs": {
+    "url": "https://github.com/robtweed/qewd-jsdb-piscina/issues"
+  },
+  "homepage": "https://github.com/robtweed/qewd-jsdb-piscina#readme"
+}
