@@ -1,4 +1,13 @@
-const jsdb = require('qewd-jsdb-piscina')();
+const qjp = require('qewd-jsdb-piscina');
+const jsdb = qjp({
+  database: {
+    "type": "IRIS",
+    "path": "C:\\InterSystems\\IRIS\\Mgr",
+    "username": "_SYSTEM",
+    "password": "SYS",
+    "namespace": "USER"
+  }
+});
 
 module.exports = ({ documentName }) => {
 

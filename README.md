@@ -3,7 +3,7 @@
 Opens access to QEWD-JSdb from a Piscina Worker Thread
 
 Rob Tweed <rtweed@mgateway.com>  
-25 June 2020, M/Gateway Developments Ltd [http://www.mgateway.com](http://www.mgateway.com)  
+29 June 2020, M/Gateway Developments Ltd [http://www.mgateway.com](http://www.mgateway.com)  
 
 Twitter: [@rtweed](https://twitter.com/rtweed)
 
@@ -26,7 +26,24 @@ persistent JavaScript Objects and multi-model database functionality
 
 Within your Piscina Worker Thread module:
 
-        const jsdb = require('qewd-jsdb-piscina');
+        const jsdb = require('qewd-jsdb-piscina')();
+
+Note: By default, *qewd-jsdb-piscina* assumes you're using YottaDB
+as your database, installed using a default configuration.  For any other
+configuration or database, you'll have to specify the database connection
+parameters, passed as an argument to the *qewd-jsdb-piscina* module.  For example, 
+if you're using InterSystems IRIS as your database:
+
+        const jsdb = require('qewd-jsdb-piscina')({
+          database: {
+            "type": "IRIS",
+            "path": "C:\\InterSystems\\IRIS\\Mgr",
+            "username": "_SYSTEM",
+            "password": "SYS",
+            "namespace": "USER"
+          }
+        });
+
 
 You'll then have access to the QEWD-JSdb APIs, eg instantiate a Document Node Object 
 representing the persistent database document named *Person*

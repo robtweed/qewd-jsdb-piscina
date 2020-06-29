@@ -1,6 +1,6 @@
 {
   "name": "qewd-jsdb-piscina",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Opens access to QEWD-JSdb from a Piscina Worker Thread",
   "main": "index.js",
   "scripts": {
